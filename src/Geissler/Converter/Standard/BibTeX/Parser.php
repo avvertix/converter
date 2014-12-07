@@ -229,7 +229,11 @@ class Parser implements ParserInterface
                 'bibtexCitation'    =>  'setCitationLabel',
                 'shorttitle'        =>  'setTitleShort',
                 'keywords'          =>  'setKeyword',
-                'LCCN'              =>  'setCallNumber'
+                'LCCN'              =>  'setCallNumber',
+                'url'               =>  'setUrl',
+                'pdf'               =>  'setPdf',
+                'doi'               =>  'setDOI',
+                'issn'              =>  'setISSN',
             );
 
             foreach ($mapper as $key => $method) {

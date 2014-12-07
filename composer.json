@@ -1,22 +1,26 @@
 {
-    "name":"geissler/converter",
+    "name":"avvertix/converter",
     "description":"A small library to convert different bibliography formats into each other",
     "keywords":["csl", "bibtex", "endnote", "ris", "bibliography"],
     "type":"library",
     "license":"MIT",
-    "homepage": "https://github.com/geissler/converter",
+    "homepage": "https://github.com/avvertix/converter",
     "authors":[
         {
             "name":"Benjamin Geißler",
             "email":"benjamin.geissler@gmail.com"
+        },
+        {
+            "name":"Alessio Vertemati",
+            "email":"avsoft@gmail.com"
         }
     ],
     "require":{
-        "php":">=5.3.0",
+        "php":">=5.3.3",
         "technosophos/LibRIS": "dev-master"
     },
     "autoload":{
-        "psr-0":{
+        "psr-4":{
             "Geissler":"src/"
         },
         "files": [

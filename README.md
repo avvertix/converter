@@ -1,5 +1,6 @@
 ## Converter
-[![Build Status](https://travis-ci.org/geissler/converter.png?branch=master)](https://travis-ci.org/geissler/converter)
+
+Forked from https://github.com/geissler/converter
 
 A small library to convert the input data for different literature standards like BibTeX, CSL etc. into each other.
 At the moment are supported [BibTeX](http://en.wikipedia.org/wiki/BibTeX "BibTeX"),
