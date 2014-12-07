@@ -568,7 +568,7 @@ class Entry
      */
     public function setCitationLabel($citationLabel)
     {
-        $this->citationLabel = $citationLabel;
+        $this->citationLabel = trim($citationLabel);
 
         return $this;
     }
