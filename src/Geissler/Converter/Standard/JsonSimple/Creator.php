@@ -34,7 +34,8 @@ class Creator implements CreatorInterface
                 /** @var $entry \Geissler\Converter\Model\Entry */
                 $record =   array();
 
-                $record['type'] =   $entry->getType()->getType();
+                $record['type'] =   $entry->getType()->getOriginalType();
+                $record['elaboratedtype'] =   $entry->getType()->getType();
 
                 $persons        =   array(
                     'author'                =>  'getAuthor',
