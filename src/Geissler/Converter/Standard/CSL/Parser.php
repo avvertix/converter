@@ -111,6 +111,7 @@ class Parser implements ParserInterface
                 'event-place'                 => 'setEventPlace',
                 'genre'                       => 'setGenre',
                 'ISBN'                        => 'setISBN',
+                'issn'                        => 'setISSN',
                 'ISSN'                        => 'setISSN',
                 'jurisdiction'                => 'setJurisdiction',
                 'keyword'                     => 'setKeyword',
@@ -131,9 +132,10 @@ class Parser implements ParserInterface
                 'status'                      => 'setStatus',
                 'title'                       => 'setTitle',
                 'title-short'                 => 'setTitleShort',
-                'URL'                         => 'setURL',
+                'url'                         => 'setURL',
                 'version'                     => 'setVersion',
-                'yearSuffix'                  => 'setYearSuffix'
+                'yearSuffix'                  => 'setYearSuffix',
+                'pdf'                         => 'setPdf'
             );
 
             foreach ($json as $record) {

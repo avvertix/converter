@@ -21,9 +21,9 @@
         "technosophos/libris": "dev-master"
     },
     "autoload":{
-        "psr-0":{
-            "Geissler\\":"src/"
-        },
+        "classmap":[
+            "src/"
+        ],
         "files": [
             "library/bibtexParse/PARSEENTRIES.php",
             "library/bibtexParse/PARSECREATORS.php",
