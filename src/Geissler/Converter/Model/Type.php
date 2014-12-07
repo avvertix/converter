@@ -12,6 +12,8 @@ class Type
     /** @var string */
     private $type;
 
+    private $original;
+
     /**
      * Only an abstract.
      *
@@ -316,7 +318,7 @@ class Type
      */
     public function setPaperConference()
     {
-        $this->type = 'paperConference';
+        $this->type = 'inproce';
         return $this;
     }
 
@@ -404,7 +406,7 @@ class Type
      */
     public function setSlide()
     {
-        $this->type =   'slide';
+        $this->type = 'slide';
         return $this;
     }
 
@@ -437,7 +439,7 @@ class Type
      */
     public function setSoftware()
     {
-        $this->type =   'software';
+        $this->type = 'software';
         return $this;
     }
 
@@ -449,6 +451,29 @@ class Type
     public function setThesis()
     {
         $this->type = 'thesis';
+        return $this;
+    }
+
+
+    /**
+     * A master-thesis.
+     *
+     * @return Type
+     */
+    public function setMasterThesis()
+    {
+        $this->type = 'mastersthesis';
+        return $this;
+    }
+
+    /**
+     * A phd-thesis.
+     *
+     * @return Type
+     */
+    public function setPhdThesis()
+    {
+        $this->type = 'phdthesis';
         return $this;
     }
 
@@ -497,6 +522,18 @@ class Type
     }
 
     /**
+     * Set the original bibtex type.
+     *
+     * @return Type
+     */
+    public function setOriginalType($ori)
+    {
+
+        $this->original = $ori;
+        return $this;
+    }
+
+    /**
      * Retrieve the type.
      *
      * @return string
@@ -504,5 +541,15 @@ class Type
     public function getType()
     {
         return $this->type;
+    }
+
+    /**
+     * Retrieve the type.
+     *
+     * @return string
+     */
+    public function getOriginalType()
+    {
+        return $this->original;
     }
 }

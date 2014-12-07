@@ -127,9 +127,11 @@ class Parser implements ParserInterface
                 case 'proceedings':
                     $entry->getType()->setPaperConference();
                     break;
+                case 'masterthesis':
                 case 'mastersthesis':
+                    $entry->getType()->setMasterThesis();
                 case 'phdthesis':
-                    $entry->getType()->setThesis();
+                    $entry->getType()->setPhdThesis();
                     break;
                 case 'booklet':
                     $entry->getType()->setPamphlet();
@@ -144,6 +146,7 @@ class Parser implements ParserInterface
                     $entry->getType()->setUnknown();
                     break;
             }
+            $entry->getType()->setOriginalType($data[$i]['bibtexEntryType']);
 
             // author
             if (isset($data[$i]['author']) == true) {
