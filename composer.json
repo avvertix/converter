@@ -8,7 +8,8 @@
     "authors":[
         {
             "name":"Benjamin Geißler",
-            "email":"benjamin.geissler@gmail.com"
+            "email":"benjamin.geissler@gmail.com",
+            "homepage": "https://github.com/geissler/converter"
         },
         {
             "name":"Alessio Vertemati",
@@ -21,7 +22,7 @@
     },
     "autoload":{
         "psr-4":{
-            "Geissler":"src/"
+            "Geissler\\":"src/"
         },
         "files": [
             "library/bibtexParse/PARSEENTRIES.php",
