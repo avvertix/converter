@@ -18,10 +18,10 @@
     ],
     "require":{
         "php":">=5.3.0",
-        "technosophos/LibRIS": "dev-master"
+        "technosophos/libris": "dev-master"
     },
     "autoload":{
-        "psr-4":{
+        "psr-0":{
             "Geissler\\":"src/"
         },
         "files": [
