@@ -11,7 +11,7 @@ At the moment are supported [BibTeX](http://en.wikipedia.org/wiki/BibTeX "BibTeX
 Add to the `composer.json` the `require` key and run composer install.
 ```
     "require" : {
-        "geissler/converter": "dev-master"
+        "avvertix/converter": "dev-master"
     }
 ```
 ### Other
