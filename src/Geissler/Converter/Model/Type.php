@@ -318,7 +318,7 @@ class Type
      */
     public function setPaperConference()
     {
-        $this->type = 'inproce';
+        $this->type = 'inproceedings';
         return $this;
     }
 
