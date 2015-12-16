@@ -142,6 +142,12 @@ class Parser implements ParserInterface
                 case 'unpublished':
                     $entry->getType()->setManuscript();
                     break;
+                case 'patent':
+                case 'patents':
+                case 'Patents':
+                case 'Patent':
+                    $entry->getType()->setPatent();
+                    break;
                 default:
                     $entry->getType()->setUnknown();
                     break;
