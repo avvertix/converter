@@ -169,6 +169,9 @@ class Parser implements ParserInterface
             if (isset($data[$i]['year']) == true) {
                 $issued->setYear($data[$i]['year']);
             }
+            if (isset($data[$i]['year']) == false && isset($data[$i]['yearfiled']) == true) {
+                $issued->setYear($data[$i]['yearfiled']);
+            }
 
             if (isset($data[$i]['month']) == true) {
                 if (is_array($data[$i]['month']) == true) {
@@ -241,6 +244,7 @@ class Parser implements ParserInterface
                 'LCCN'              =>  'setCallNumber',
                 'url'               =>  'setUrl',
                 'pdf'               =>  'setPdf',
+                'yearfiled'         =>  'setYearFiled',
                 'doi'               =>  'setDOI',
                 'issn'              =>  'setISSN',
             );
