@@ -177,6 +177,8 @@ class Entry
     private $originalDate;
     /** @var \Geissler\Converter\Model\Dates */
     private $submitted;
+    /** @var string */
+    private $projectRef;
 
     /**
      * Init all necessary objects.
@@ -1750,4 +1752,27 @@ class Entry
     {
         return $this->yearFiled;
     }
+    
+    /**
+     * Reference Link to a Project Page (not in bibtex specification)
+     *
+     * @param $projectRef
+     * @return Entry
+     */
+    public function setProjectRef($projectRef)
+    {
+        $this->projectRef = $projectRef;
+        return $this;
+    }
+
+    /**
+     * Reference Link to a Project Page (not in bibtex specification)
+     *
+     * @return string
+     */
+    public function getProjectRef()
+    {
+        return $this->projectRef;
+    }
+    
 }

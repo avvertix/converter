@@ -52,6 +52,7 @@ class Creator implements CreatorInterface
             'yearfiled'         =>  'getYearFiled',
             'doi'               =>  'getDOI',
             'issn'              =>  'getISSN',
+            'projectref'        =>  'getProjectRef',
         );
 
         foreach ($data as $entry) {

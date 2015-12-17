@@ -247,6 +247,8 @@ class Parser implements ParserInterface
                 'yearfiled'         =>  'setYearFiled',
                 'doi'               =>  'setDOI',
                 'issn'              =>  'setISSN',
+                'project-ref'       =>  'setProjectRef',
+                'projectref'       =>  'setProjectRef',
             );
 
             foreach ($mapper as $key => $method) {

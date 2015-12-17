@@ -134,7 +134,8 @@ class Creator implements CreatorInterface
                     'version'                     => 'getVersion',
                     'yearSuffix'                  => 'getYearSuffix',
                     'yearfiled'                   => 'getYearFiled',
-                    'pdf'                         => 'getPdf'
+                    'pdf'                         => 'getPdf',
+                    'projectref'                  => 'getProjectRef'
                 );
 
                 foreach ($fields as $field => $getter) {
