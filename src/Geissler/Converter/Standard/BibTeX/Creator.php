@@ -49,6 +49,7 @@ class Creator implements CreatorInterface
             'LCCN'              =>  'getCallNumber',
             'url'               =>  'getUrl',
             'pdf'               =>  'getPdf',
+            'yearfiled'         =>  'getYearFiled',
             'doi'               =>  'getDOI',
             'issn'              =>  'getISSN',
         );
